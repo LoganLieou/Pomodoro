@@ -10,8 +10,10 @@ import SwiftUI
 @main
 struct TomatoTimerApp: App {
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra("Menu Bar Example", systemImage: "timer") {
             ContentView()
+                .frame(width: 300, height: 300)
         }
+        .menuBarExtraStyle(.window)
     }
 }
